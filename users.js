@@ -1,4 +1,24 @@
 // ===== FILE 7: Profiles, Themes, Markdown, Reactions, Mentions, Badges, Directory =====
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 
 const marked = require('marked');
 
