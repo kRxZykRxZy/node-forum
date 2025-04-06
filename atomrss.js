@@ -1,4 +1,24 @@
 // ===== FILE 8: Real-time Comments, Follow System, Webhooks, RSS, Anti-spam, Mod Logs =====
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 
 let follows = {}; // { user: [page1, page2], page: [user1, user2] }
 let webhooks = []; // { url, event }
