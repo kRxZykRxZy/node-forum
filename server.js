@@ -1,4 +1,24 @@
 // ===== FILE 5: Admin Settings, Bans, Roles, Currency, Config Panel =====
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 
 let bannedIPs = [];
 let bannedUsers = [];
