@@ -1,5 +1,24 @@
 // ===== FILE 10: Themes, OAuth, Private Messages, Modular UI, Rate Limits, Directory, Webhooks =====
-
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 let userThemes = {}; // { username: "dark" | "light" | "neon" }
 let privateMessages = []; // { from, to, message, timestamp }
 let userDirectory = []; // for search
