@@ -1,4 +1,24 @@
 // ===== FILE 6: Notifications, Mod Reports, Queue, Logs, Analytics =====
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 
 let notifications = []; // {to, message, link, timestamp}
 let modReports = []; // {reporter, target, type, reason, timestamp, status}
