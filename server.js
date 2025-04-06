@@ -20,6 +20,8 @@ const {
   events
 } = require('./core');
 
+const app = express();
+
 let bannedIPs = [];
 let bannedUsers = [];
 let siteConfig = {
