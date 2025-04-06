@@ -1,4 +1,24 @@
 // ===== FILE 3: Pages, Comments, Tags, Markdown =====
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 
 const marked = require('marked');
 const DOMPurify = require('isomorphic-dompurify');
