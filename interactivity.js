@@ -1,4 +1,24 @@
 // ===== FILE 4: Comments Edit/Delete, Notifications, Reactions, Mentions, Themes =====
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 
 const escapeHTML = (str) => str.replace(/[&<>'"`=]/g, s => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;', '`': '&#96;', '=': '&#61;' })[s]);
 
