@@ -1,5 +1,25 @@
 // Node.js Forum Software
 // File 2/10 - User system, roles, bans, and profiles
+const {
+  express,
+  bodyParser,
+  marked,
+  fs,
+  path,
+  uuid,
+  socketIO,
+  dayjs,
+  fetch,
+  cors,
+  jsdom,
+  chalk,
+  crypto,
+  cookieParser,
+  readline,
+  compression,
+  os,
+  events
+} = require('./core');
 
 const crypto = require('crypto');
 
