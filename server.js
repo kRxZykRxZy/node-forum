@@ -43,7 +43,7 @@ function isBanned(req, res, next) {
 app.use(isBanned);
 
 // Admin dashboard
-app.get('/admin', requireAdmin, (req, res) => {
+app.get('/admin', (req, res) => {
     res.send(`
         <html><body>
         <h1>Admin Panel</h1>
